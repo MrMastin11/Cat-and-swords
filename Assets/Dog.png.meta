@@ -119,12 +119,12 @@ TextureImporter:
       name: Dog_0
       rect:
         serializedVersion: 2
-        x: 59
-        y: 658
-        width: 255
+        x: 50
+        y: 657
+        width: 271
         height: 285
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.50458604, y: 0.4999998}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -144,9 +144,9 @@ TextureImporter:
         x: 365
         y: 655
         width: 277
-        height: 268
+        height: 291
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -163,7 +163,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: bd41ae91cdc5f03428a8662f52e19740
     internalID: 0
     vertices: []
     indices: 
@@ -172,7 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Dog_0: -3994744024693093290
+      Dog_1: 3704152636332655822
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
