@@ -119,12 +119,12 @@ TextureImporter:
       name: CAT_0
       rect:
         serializedVersion: 2
-        x: 53
-        y: 772
-        width: 154
+        x: 52
+        y: 774
+        width: 159
         height: 206
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -141,12 +141,12 @@ TextureImporter:
       name: CAT_1
       rect:
         serializedVersion: 2
-        x: 226
-        y: 769
-        width: 154
-        height: 193
+        x: 228
+        y: 770
+        width: 158
+        height: 206
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -163,7 +163,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: b1d27c73a1d2b5a4c8a12a3ad730dabf
     internalID: 0
     vertices: []
     indices: 
@@ -172,7 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      CAT_0: -4897578839205825560
+      CAT_1: 3057949899282329982
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

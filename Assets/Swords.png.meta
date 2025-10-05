@@ -158,12 +158,12 @@ TextureImporter:
       name: Swords_0
       rect:
         serializedVersion: 2
-        x: 40
-        y: 799
-        width: 75
-        height: 193
+        x: 8
+        y: 795
+        width: 188
+        height: 197
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -183,9 +183,9 @@ TextureImporter:
         x: 220
         y: 797
         width: 224
-        height: 127
+        height: 190
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -202,12 +202,12 @@ TextureImporter:
       name: Swords_2
       rect:
         serializedVersion: 2
-        x: 524
+        x: 471
         y: 789
-        width: 75
+        width: 194
         height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -224,12 +224,12 @@ TextureImporter:
       name: Swords_3
       rect:
         serializedVersion: 2
-        x: 41
+        x: 2
         y: 600
-        width: 75
+        width: 195
         height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -249,9 +249,9 @@ TextureImporter:
         x: 220
         y: 607
         width: 224
-        height: 127
+        height: 189
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -268,12 +268,12 @@ TextureImporter:
       name: Swords_5
       rect:
         serializedVersion: 2
-        x: 521
-        y: 597
-        width: 75
+        x: 471
+        y: 598
+        width: 193
         height: 191
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -290,12 +290,12 @@ TextureImporter:
       name: Swords_6
       rect:
         serializedVersion: 2
-        x: 45
+        x: 0
         y: 406
-        width: 75
+        width: 200
         height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -315,9 +315,9 @@ TextureImporter:
         x: 224
         y: 413
         width: 224
-        height: 127
+        height: 194
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -334,12 +334,12 @@ TextureImporter:
       name: Swords_8
       rect:
         serializedVersion: 2
-        x: 525
-        y: 399
-        width: 75
-        height: 195
+        x: 473
+        y: 396
+        width: 192
+        height: 202
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -356,12 +356,12 @@ TextureImporter:
       name: Swords_9
       rect:
         serializedVersion: 2
-        x: 45
+        x: 0
         y: 210
-        width: 75
+        width: 199
         height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -381,9 +381,9 @@ TextureImporter:
         x: 224
         y: 217
         width: 224
-        height: 127
+        height: 185
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -400,12 +400,12 @@ TextureImporter:
       name: Swords_11
       rect:
         serializedVersion: 2
-        x: 525
-        y: 207
-        width: 75
+        x: 476
+        y: 205
+        width: 192
         height: 191
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -422,12 +422,12 @@ TextureImporter:
       name: Swords_12
       rect:
         serializedVersion: 2
-        x: 49
+        x: 0
         y: 16
-        width: 75
+        width: 199
         height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -447,9 +447,9 @@ TextureImporter:
         x: 228
         y: 23
         width: 224
-        height: 127
+        height: 180
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -466,12 +466,12 @@ TextureImporter:
       name: Swords_14
       rect:
         serializedVersion: 2
-        x: 529
-        y: 12
-        width: 75
+        x: 475
+        y: 9
+        width: 192
         height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -488,7 +488,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 87c7f419d0d9c0146a64ad609d7264d7
     internalID: 0
     vertices: []
     indices: 
@@ -497,7 +497,22 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Swords_0: 4942803658038726614
+      Swords_1: 6123003023063038561
+      Swords_10: 1340437603416802206
+      Swords_11: -841782673843346218
+      Swords_12: -1183829936002771988
+      Swords_13: -993536727369214721
+      Swords_14: 6364903689134042001
+      Swords_2: 4978276593797209138
+      Swords_3: -9004990608046106943
+      Swords_4: 8289387723579576647
+      Swords_5: -8675077286395491812
+      Swords_6: -4470654044548505675
+      Swords_7: 788015303910585071
+      Swords_8: 7441372264213655823
+      Swords_9: -2689349333746839185
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
