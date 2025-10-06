@@ -93,7 +93,7 @@ public class EnemyChangerUI : MonoBehaviour
             playerHP = 0;
             UpdateHPUI();
             PlayerDeath();
-            StopCoroutine(ChangeSprite());
+            StopAllCoroutines();
         }
     }
 
