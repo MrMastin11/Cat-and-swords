@@ -144,16 +144,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4610206}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1387600729}
+  m_Father: {fileID: 1898105291}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3.727, y: -62.54678}
+  m_AnchoredPosition: {x: -0.0030822754, y: -62.546783}
   m_SizeDelta: {x: 147.4362, y: 22.8936}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &4610208
@@ -337,7 +337,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 50150587}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1878554687}
+        m_TargetAssemblyTypeName: SwordManager, Assembly-CSharp
+        m_MethodName: SelectSword
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Diamond Sword
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &50150587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -766,7 +778,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 439593020}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -774,11 +786,11 @@ RectTransform:
   - {fileID: 1980912199}
   - {fileID: 585156486}
   - {fileID: 1103474946}
-  m_Father: {fileID: 1878554684}
+  m_Father: {fileID: 2063461242}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 75, y: -15.538}
+  m_AnchoredPosition: {x: -0.000022888184, y: -93.538}
   m_SizeDelta: {x: 150, y: 31.0767}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &439593022
@@ -866,7 +878,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -307.3085, y: -0.000045776367}
+  m_AnchoredPosition: {x: -307.30835, y: -0.00012207031}
   m_SizeDelta: {x: -614.6169, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &478881742
@@ -1200,7 +1212,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -50, y: -95}
+  m_AnchoredPosition: {x: 0.0000076293945, y: -95}
   m_SizeDelta: {x: 200, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &634143501
@@ -1730,7 +1742,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 811225074}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1878554687}
+        m_TargetAssemblyTypeName: SwordManager, Assembly-CSharp
+        m_MethodName: SelectSword
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Obsidian Sword
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &811225074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1851,7 +1875,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 854401021}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1878554687}
+        m_TargetAssemblyTypeName: SwordManager, Assembly-CSharp
+        m_MethodName: SelectSword
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Iron Sword
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &854401021
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2376,7 +2412,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -310, y: 225}
+  m_AnchoredPosition: {x: -309.99997, y: 224.99998}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1178853939
@@ -2514,82 +2550,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &1387600728
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1387600729}
-  - component: {fileID: 1387600731}
-  - component: {fileID: 1387600730}
-  m_Layer: 5
-  m_Name: Chest
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1387600729
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1387600728}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 4610207}
-  m_Father: {fileID: 1878554684}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 254, y: 53}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1387600730
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1387600728}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: -6834524911116659543, guid: 6464912418d86ca44b031a9935dad43d, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 1
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1387600731
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1387600728}
-  m_CullTransparentMesh: 1
 --- !u!1 &1495199901
 GameObject:
   m_ObjectHideFlags: 0
@@ -2812,7 +2772,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1752657341}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1878554687}
+        m_TargetAssemblyTypeName: SwordManager, Assembly-CSharp
+        m_MethodName: SelectSword
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Copper Sword
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1752657341
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2851,6 +2823,115 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1752657338}
   m_CullTransparentMesh: 1
+--- !u!1001 &1771171738
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1878554684}
+    m_Modifications:
+    - target: {fileID: 2362348437218058681, guid: 43ae2cc866dc9494e818f46be07518fb, type: 3}
+      propertyPath: m_Name
+      value: SwordDrop
+      objectReference: {fileID: 0}
+    - target: {fileID: 6057154642306915871, guid: 43ae2cc866dc9494e818f46be07518fb, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6057154642306915871, guid: 43ae2cc866dc9494e818f46be07518fb, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6057154642306915871, guid: 43ae2cc866dc9494e818f46be07518fb, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6057154642306915871, guid: 43ae2cc866dc9494e818f46be07518fb, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6057154642306915871, guid: 43ae2cc866dc9494e818f46be07518fb, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6057154642306915871, guid: 43ae2cc866dc9494e818f46be07518fb, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6057154642306915871, guid: 43ae2cc866dc9494e818f46be07518fb, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6057154642306915871, guid: 43ae2cc866dc9494e818f46be07518fb, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6057154642306915871, guid: 43ae2cc866dc9494e818f46be07518fb, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.0178117
+      objectReference: {fileID: 0}
+    - target: {fileID: 6057154642306915871, guid: 43ae2cc866dc9494e818f46be07518fb, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.0178117
+      objectReference: {fileID: 0}
+    - target: {fileID: 6057154642306915871, guid: 43ae2cc866dc9494e818f46be07518fb, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.0178117
+      objectReference: {fileID: 0}
+    - target: {fileID: 6057154642306915871, guid: 43ae2cc866dc9494e818f46be07518fb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6057154642306915871, guid: 43ae2cc866dc9494e818f46be07518fb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6057154642306915871, guid: 43ae2cc866dc9494e818f46be07518fb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6057154642306915871, guid: 43ae2cc866dc9494e818f46be07518fb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6057154642306915871, guid: 43ae2cc866dc9494e818f46be07518fb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6057154642306915871, guid: 43ae2cc866dc9494e818f46be07518fb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6057154642306915871, guid: 43ae2cc866dc9494e818f46be07518fb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6057154642306915871, guid: 43ae2cc866dc9494e818f46be07518fb, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 465
+      objectReference: {fileID: 0}
+    - target: {fileID: 6057154642306915871, guid: 43ae2cc866dc9494e818f46be07518fb, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -76
+      objectReference: {fileID: 0}
+    - target: {fileID: 6057154642306915871, guid: 43ae2cc866dc9494e818f46be07518fb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6057154642306915871, guid: 43ae2cc866dc9494e818f46be07518fb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6057154642306915871, guid: 43ae2cc866dc9494e818f46be07518fb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 43ae2cc866dc9494e818f46be07518fb, type: 3}
 --- !u!1 &1818401058
 GameObject:
   m_ObjectHideFlags: 0
@@ -2885,7 +2966,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -109, y: 71}
+  m_AnchoredPosition: {x: -97, y: 78}
   m_SizeDelta: {x: 120, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1818401060
@@ -2926,6 +3007,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1818401058}
   m_CullTransparentMesh: 1
+--- !u!224 &1819976849 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6057154642306915871, guid: 43ae2cc866dc9494e818f46be07518fb, type: 3}
+  m_PrefabInstance: {fileID: 1771171738}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1824957017
 GameObject:
   m_ObjectHideFlags: 0
@@ -3014,6 +3100,8 @@ GameObject:
   - component: {fileID: 1878554682}
   - component: {fileID: 1878554681}
   - component: {fileID: 1878554685}
+  - component: {fileID: 1878554686}
+  - component: {fileID: 1878554687}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -3100,16 +3188,16 @@ RectTransform:
   - {fileID: 634143500}
   - {fileID: 2063461242}
   - {fileID: 1818401059}
-  - {fileID: 1387600729}
   - {fileID: 478881741}
   - {fileID: 1178853938}
+  - {fileID: 1898105291}
   - {fileID: 1752657339}
   - {fileID: 854401019}
   - {fileID: 1933032165}
   - {fileID: 50150585}
   - {fileID: 811225072}
-  - {fileID: 439593021}
   - {fileID: 253458345}
+  - {fileID: 1819976849}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -3129,20 +3217,234 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 355464248298a054aa091bb5f911319b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprites:
-  - {fileID: 4942803658038726614, guid: 7d3e03585235b5d4f87372ad7ceefa93, type: 3}
-  - {fileID: 6123003023063038561, guid: 7d3e03585235b5d4f87372ad7ceefa93, type: 3}
   img: {fileID: 1818401060}
   targetToFlash: {fileID: 2063461243}
   EnemyHealthBar: {fileID: 439593022}
   EnemyHealthText: {fileID: 1103474947}
   Enemy: {fileID: 2063461241}
-  Chest: {fileID: 1387600728}
+  Chest: {fileID: 1898105290}
+  chestopen: {fileID: 1878554686}
+  swordManager: {fileID: 1878554687}
   flashDuration: 0.12
-  moveOffset: {x: 50, y: 0, z: 0}
+  moveOffset: {x: 100, y: 0, z: 0}
   MaxEnemyHealth: 10
   CurentEnemyHealth: 10
+  currentDamage: 1
   enableLogs: 0
+--- !u!114 &1878554686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878554680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e20e840eb709b4141abb412aa6113a48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chestSprites:
+  - {fileID: -6834524911116659543, guid: 6464912418d86ca44b031a9935dad43d, type: 3}
+  - {fileID: 5045073161074915229, guid: 6464912418d86ca44b031a9935dad43d, type: 3}
+  Chest: {fileID: 1898105294}
+  textMeshProUGUI: {fileID: 4610208}
+  dropPrefab: {fileID: 2362348437218058681, guid: 43ae2cc866dc9494e818f46be07518fb, type: 3}
+  spawnPoint: {fileID: 1898105291}
+  height: 100
+  duration: 1
+  cuperSprite: {fileID: 4978276593797209138, guid: 7d3e03585235b5d4f87372ad7ceefa93, type: 3}
+  ironSprite: {fileID: -8675077286395491812, guid: 7d3e03585235b5d4f87372ad7ceefa93, type: 3}
+  goldSprite: {fileID: 7441372264213655823, guid: 7d3e03585235b5d4f87372ad7ceefa93, type: 3}
+  diamondSprite: {fileID: -841782673843346218, guid: 7d3e03585235b5d4f87372ad7ceefa93, type: 3}
+  obsidianSprite: {fileID: 6364903689134042001, guid: 7d3e03585235b5d4f87372ad7ceefa93, type: 3}
+--- !u!114 &1878554687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878554680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd40f08ad2e846c48bc80ea30cd487bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  swords:
+  - name: Copper Sword
+    level: 1
+    baseDamage: 1
+    damage: 1
+    uiText: {fileID: 651760417}
+    icon: {fileID: 1752657341}
+    normalSprite: {fileID: 4942803658038726614, guid: 7d3e03585235b5d4f87372ad7ceefa93, type: 3}
+    attackSprite: {fileID: 6123003023063038561, guid: 7d3e03585235b5d4f87372ad7ceefa93, type: 3}
+  - name: Iron Sword
+    level: 0
+    baseDamage: 2
+    damage: 2
+    uiText: {fileID: 1495199903}
+    icon: {fileID: 854401021}
+    normalSprite: {fileID: -9004990608046106943, guid: 7d3e03585235b5d4f87372ad7ceefa93, type: 3}
+    attackSprite: {fileID: 8289387723579576647, guid: 7d3e03585235b5d4f87372ad7ceefa93, type: 3}
+  - name: Gold Sword
+    level: 0
+    baseDamage: 3
+    damage: 3
+    uiText: {fileID: 300984836}
+    icon: {fileID: 1933032167}
+    normalSprite: {fileID: -4470654044548505675, guid: 7d3e03585235b5d4f87372ad7ceefa93, type: 3}
+    attackSprite: {fileID: 788015303910585071, guid: 7d3e03585235b5d4f87372ad7ceefa93, type: 3}
+  - name: Diamond Sword
+    level: 0
+    baseDamage: 4
+    damage: 4
+    uiText: {fileID: 1178441674}
+    icon: {fileID: 50150587}
+    normalSprite: {fileID: -2689349333746839185, guid: 7d3e03585235b5d4f87372ad7ceefa93, type: 3}
+    attackSprite: {fileID: 1340437603416802206, guid: 7d3e03585235b5d4f87372ad7ceefa93, type: 3}
+  - name: Obsidian Sword
+    level: 0
+    baseDamage: 5
+    damage: 5
+    uiText: {fileID: 2082332783}
+    icon: {fileID: 811225074}
+    normalSprite: {fileID: -1183829936002771988, guid: 7d3e03585235b5d4f87372ad7ceefa93, type: 3}
+    attackSprite: {fileID: -993536727369214721, guid: 7d3e03585235b5d4f87372ad7ceefa93, type: 3}
+  attack: {fileID: 1878554685}
+  playerSwordImage: {fileID: 1818401060}
+--- !u!1 &1898105290
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1898105291}
+  - component: {fileID: 1898105293}
+  - component: {fileID: 1898105294}
+  - component: {fileID: 1898105292}
+  m_Layer: 5
+  m_Name: Chest
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1898105291
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1898105290}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4610207}
+  m_Father: {fileID: 1878554684}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 257.73, y: 53}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1898105292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1898105290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1898105294}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1878554686}
+        m_TargetAssemblyTypeName: ChestOpen, Assembly-CSharp
+        m_MethodName: OnChestClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!222 &1898105293
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1898105290}
+  m_CullTransparentMesh: 1
+--- !u!114 &1898105294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1898105290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -6834524911116659543, guid: 6464912418d86ca44b031a9935dad43d, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &1933032164
 GameObject:
   m_ObjectHideFlags: 0
@@ -3225,7 +3527,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1933032167}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1878554687}
+        m_TargetAssemblyTypeName: SwordManager, Assembly-CSharp
+        m_MethodName: SelectSword
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Gold Sword
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1933032167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3369,7 +3683,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 439593021}
   m_Father: {fileID: 1878554684}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}

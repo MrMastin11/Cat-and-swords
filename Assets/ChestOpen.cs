@@ -38,7 +38,7 @@ public class ChestOpen : MonoBehaviour
 
     public void OnChestClick()
     {
-        if (opened) return;
+        if (opened) return; 
         opened = true;
         StartCoroutine(OpenChestRoutine());
     }
@@ -55,15 +55,15 @@ public class ChestOpen : MonoBehaviour
         dropItem.SetSwordData(name, sprite);
         yield return StartCoroutine(DropMotion(drop.transform));
 
-        opened = false;
     }
 
     public void CloseChest()
     {
-        opened = false;
+        opened = false; 
         Chest.sprite = chestSprites[0];
         textMeshProUGUI.text = "Click to unlock!";
     }
+
     (string, Sprite) GetNextSword()
     {
         if (swordPool.Count == 0)
@@ -133,3 +133,4 @@ public class ChestOpen : MonoBehaviour
         }
     }
 }
+

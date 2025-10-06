@@ -1,37 +1,28 @@
-using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.EventSystems;
 using TMPro;
+using UnityEngine; 
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class DropItem : MonoBehaviour, IPointerClickHandler
 {
-    private int SwordLvl = 1;
-    private int Damage = 1;
-    private string swordType;
+    public SwordManager swordManager;
+    private string swordName;
+    public TextMeshProUGUI textMeshPro;
+    public Image image;
 
-    private Image swordImage;
-    private TextMeshProUGUI swordNameText;
-
-    void Awake()
+    public void SetSwordData(string name, Sprite sprite) 
     {
-        swordImage = GetComponentInChildren<Image>();
-        swordNameText = GetComponentInChildren<TextMeshProUGUI>();
-    }
-
-    public void SetSwordData(string name, Sprite sprite)
-    {
-        swordType = name;
-        if (swordImage != null) swordImage.sprite = sprite;
-        if (swordNameText != null) swordNameText.text = name;
+        swordName = name;
+        textMeshPro.text = name;
+        image.sprite = sprite;
     }
 
     public void OnPointerClick(PointerEventData eventData)
     {
+        if (swordManager != null)
+            swordManager.UpgradeSword(swordName);
         Destroy(gameObject);
-        SwordLvl += 1;
-        Damage += 1;
-
-        if (swordNameText != null)
-            swordNameText.text = $"{swordType}\nLvl {SwordLvl}\nDamage {Damage}";
     }
 }
+
+

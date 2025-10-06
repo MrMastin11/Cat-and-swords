@@ -8,8 +8,13 @@ public class SwordManager : MonoBehaviour
     public class SwordData
     {
         public string name;
-        public int level = 0;
-        public int damage = 0;
+
+        [Header("Stats")]
+        public int level = 0;        
+        public int baseDamage = 1;     
+        public int damage = 0;        
+
+        [Header("UI Elements")]
         public TextMeshProUGUI uiText;
         public Image icon;
 
@@ -36,14 +41,16 @@ public class SwordManager : MonoBehaviour
             if (isCopper)
             {
                 sword.level = 1;
-                sword.damage = 1;
+                sword.damage = sword.baseDamage;
                 UpdateUI(sword);
                 SelectSword(sword.name);
             }
         }
+
+        UpdateAttackDamage();
     }
 
-    public void UpgradeSword(string swordName, int bonus)
+    public void UpgradeSword(string swordName)
     {
         foreach (var sword in swords)
         {
@@ -52,17 +59,23 @@ public class SwordManager : MonoBehaviour
                 if (sword.level == 0)
                 {
                     sword.level = 1;
-                    sword.damage = bonus;
+                    sword.damage = sword.baseDamage;
                     SetVisible(sword, true);
                 }
                 else
                 {
-                    sword.level++;
-                    sword.damage += bonus;
+                    sword.level += 1;
+                    sword.damage = sword.level * sword.baseDamage;
                 }
 
                 UpdateUI(sword);
-                attack.NextEnemy();
+
+                if (currentSword == sword)
+                    UpdateAttackDamage();
+
+                if (attack != null)
+                    attack.NextEnemy();
+
                 return;
             }
         }
@@ -76,6 +89,8 @@ public class SwordManager : MonoBehaviour
             {
                 currentSword = sword;
                 playerSwordImage.sprite = sword.normalSprite;
+
+                UpdateAttackDamage();
                 return;
             }
         }
@@ -98,12 +113,21 @@ public class SwordManager : MonoBehaviour
 
     private void UpdateUI(SwordData sword)
     {
-        sword.uiText.text = $"{sword.name}\nLvl {sword.level}\nDamage {sword.damage}";
+        if (sword.uiText != null)
+            sword.uiText.text = $"{sword.name}\nLvl {sword.level}\nDamage {sword.damage}";
     }
 
     private void SetVisible(SwordData sword, bool visible)
     {
-        sword.uiText.gameObject.SetActive(visible);
-        sword.icon.gameObject.SetActive(visible);
+        if (sword.uiText != null) sword.uiText.gameObject.SetActive(visible);
+        if (sword.icon != null) sword.icon.gameObject.SetActive(visible);
+    }
+
+    private void UpdateAttackDamage()
+    {
+        if (attack != null)
+            attack.currentDamage = GetCurrentDamage();
     }
 }
+
+
