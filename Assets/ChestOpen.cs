@@ -24,6 +24,10 @@ public class ChestOpen : MonoBehaviour
     public Sprite diamondSprite;
     public Sprite obsidianSprite;
 
+    [Header("Audio")]
+    public AudioSource audioSource;
+    public AudioClip clickSound;
+
     private bool opened = false;
 
     private List<string> swordPool = new List<string>();
@@ -41,6 +45,7 @@ public class ChestOpen : MonoBehaviour
         if (opened) return; 
         opened = true;
         StartCoroutine(OpenChestRoutine());
+        audioSource.PlayOneShot(clickSound);
     }
 
     IEnumerator OpenChestRoutine()
@@ -87,11 +92,11 @@ public class ChestOpen : MonoBehaviour
     {
         swordPool.Clear();
 
-        AddSwords("Copper Sword", 10);
-        AddSwords("Iron Sword", 8);
-        AddSwords("Gold Sword", 6);
-        AddSwords("Diamond Sword", 4);
-        AddSwords("Obsidian Sword", 2);
+        AddSwords("Copper Sword", 15);
+        AddSwords("Iron Sword", 12);
+        AddSwords("Gold Sword", 9);
+        AddSwords("Diamond Sword", 6);
+        AddSwords("Obsidian Sword", 3);
 
         for (int i = swordPool.Count - 1; i > 0; i--)
         {

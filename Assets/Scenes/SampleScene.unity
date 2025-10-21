@@ -526,6 +526,135 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 70831283}
   m_CullTransparentMesh: 1
+--- !u!1 &208521894
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 208521896}
+  - component: {fileID: 208521895}
+  m_Layer: 0
+  m_Name: Audio source
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &208521895
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 208521894}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 84ed44ecf694b2644a142ee3be70bb9a, type: 3}
+  m_Resource: {fileID: 8300000, guid: 84ed44ecf694b2644a142ee3be70bb9a, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.5
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &208521896
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 208521894}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &253458344
 GameObject:
   m_ObjectHideFlags: 0
@@ -604,7 +733,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 0}
   m_FillRect: {fileID: 728543118}
   m_HandleRect: {fileID: 0}
@@ -2613,6 +2742,14 @@ PrefabInstance:
       value: Image (1)
       objectReference: {fileID: 0}
     - target: {fileID: 8121489894561955714, guid: b27552977a0b711498b76614fba7812f, type: 3}
+      propertyPath: clickSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 9993ba98c6d91a9469de460c2163c889, type: 3}
+    - target: {fileID: 8121489894561955714, guid: b27552977a0b711498b76614fba7812f, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 208521895}
+    - target: {fileID: 8121489894561955714, guid: b27552977a0b711498b76614fba7812f, type: 3}
       propertyPath: swordManager
       value: 
       objectReference: {fileID: 1878554687}
@@ -3577,6 +3714,11 @@ MonoBehaviour:
   CurentEnemyHealth: 10
   currentDamage: 1
   enableLogs: 0
+  audioSource: {fileID: 208521895}
+  clickSounds:
+  - {fileID: 8300000, guid: 84ed44ecf694b2644a142ee3be70bb9a, type: 3}
+  - {fileID: 8300000, guid: a541e0bfeb53f16499defb7a6e62546e, type: 3}
+  - {fileID: 8300000, guid: 7914492b779cabe449d7642d02d92427, type: 3}
 --- !u!114 &1878554686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3603,6 +3745,8 @@ MonoBehaviour:
   goldSprite: {fileID: 7441372264213655823, guid: 7d3e03585235b5d4f87372ad7ceefa93, type: 3}
   diamondSprite: {fileID: -841782673843346218, guid: 7d3e03585235b5d4f87372ad7ceefa93, type: 3}
   obsidianSprite: {fileID: 6364903689134042001, guid: 7d3e03585235b5d4f87372ad7ceefa93, type: 3}
+  audioSource: {fileID: 208521895}
+  clickSound: {fileID: 8300000, guid: df6f259e0c3e98a42a89bb321615d9e7, type: 3}
 --- !u!114 &1878554687
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3658,6 +3802,8 @@ MonoBehaviour:
     attackSprite: {fileID: -993536727369214721, guid: 7d3e03585235b5d4f87372ad7ceefa93, type: 3}
   attack: {fileID: 1878554685}
   playerSwordImage: {fileID: 1818401060}
+  audioSource: {fileID: 208521895}
+  clickSound: {fileID: 8300000, guid: 7c0142bda0eab7a45a031b0e79b63289, type: 3}
 --- !u!1 &1898105290
 GameObject:
   m_ObjectHideFlags: 0
@@ -4093,8 +4239,8 @@ MonoBehaviour:
   - {fileID: 1506059532727745469, guid: 5a44d61e9d40ed847be7ec76ee82fb4a, type: 3}
   - {fileID: -3994744024693093290, guid: d4a9206c07c4faa4d9b64197958b2be8, type: 3}
   - {fileID: 3704152636332655822, guid: d4a9206c07c4faa4d9b64197958b2be8, type: 3}
-  - {fileID: 4263848811941114141, guid: e6ed2a2b80a58db4f8451ae0c30d7856, type: 3}
   - {fileID: 6771271397260755441, guid: e6ed2a2b80a58db4f8451ae0c30d7856, type: 3}
+  - {fileID: 4263848811941114141, guid: e6ed2a2b80a58db4f8451ae0c30d7856, type: 3}
   - {fileID: 8558609482818089605, guid: 273f18ae499d1d84db23b39dddb6d8d9, type: 3}
   - {fileID: 126385340790278489, guid: 273f18ae499d1d84db23b39dddb6d8d9, type: 3}
   img: {fileID: 2063461243}
@@ -4329,3 +4475,4 @@ SceneRoots:
   - {fileID: 926265697}
   - {fileID: 1175610363}
   - {fileID: 589865596}
+  - {fileID: 208521896}

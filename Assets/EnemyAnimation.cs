@@ -26,6 +26,7 @@ public class EnemyChangerUI : MonoBehaviour
 
     [Header("Enemy Damage")]
     private int enemyDamage;
+    private bool isReadyAttack = false; 
 
     void OnEnable()
     {
@@ -70,13 +71,20 @@ public class EnemyChangerUI : MonoBehaviour
 
     IEnumerator ChangeSprite()
     {
+        isReadyAttack = false;
         while (true)
         {
             img.sprite = sprites[currentSet[index]];
             index = (index + 1) % currentSet.Length;
-
-            TakeDamage(enemyDamage);
-
+            if (isReadyAttack == true)
+                {
+                TakeDamage(enemyDamage);
+                isReadyAttack = false;
+                }
+            else
+            {
+                isReadyAttack = true;
+            }
             yield return new WaitForSeconds(interval);
         }
     }

@@ -9,6 +9,9 @@ public class DropItem : MonoBehaviour, IPointerClickHandler
     private string swordName;
     public TextMeshProUGUI textMeshPro;
     public Image image;
+    [Header("Audio")]
+    public AudioSource audioSource;
+    public AudioClip clickSound;
 
     public void SetSwordData(string name, Sprite sprite) 
     {
@@ -21,6 +24,7 @@ public class DropItem : MonoBehaviour, IPointerClickHandler
     {
         if (swordManager != null)
             swordManager.UpgradeSword(swordName);
+        audioSource.PlayOneShot(clickSound);
         Destroy(gameObject);
     }
 }

@@ -1,5 +1,6 @@
-using UnityEngine;
 using TMPro;
+using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.UI;
 
 public class SwordManager : MonoBehaviour
@@ -21,6 +22,7 @@ public class SwordManager : MonoBehaviour
         [Header("Sprites")]
         public Sprite normalSprite;
         public Sprite attackSprite;
+
     }
 
     public SwordData[] swords;
@@ -28,6 +30,10 @@ public class SwordManager : MonoBehaviour
 
     [Header("Player Sword Settings")]
     public Image playerSwordImage;
+
+    [Header("Audio")]
+    public AudioSource audioSource;
+    public AudioClip clickSound;
 
     private SwordData currentSword;
 
@@ -89,7 +95,7 @@ public class SwordManager : MonoBehaviour
             {
                 currentSword = sword;
                 playerSwordImage.sprite = sword.normalSprite;
-
+                audioSource.PlayOneShot(clickSound);
                 UpdateAttackDamage();
                 return;
             }

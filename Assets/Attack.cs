@@ -27,6 +27,10 @@ public class Attack : MonoBehaviour
     [Header("Debug")]
     public bool enableLogs = false;
 
+    [Header("Audio")]
+    public AudioSource audioSource;
+    public AudioClip[] clickSounds; // now supports multiple sounds
+
     private Coroutine flashRoutine;
     private Coroutine flashColorRoutine;
     private RectTransform rt;
@@ -37,6 +41,20 @@ public class Attack : MonoBehaviour
     void Awake()
     {
         rt = img.rectTransform;
+
+        // Ensure an AudioSource exists so clicks can play a sound.
+        if (audioSource == null)
+        {
+            audioSource = GetComponent<AudioSource>();
+            if (audioSource == null)
+            {
+                audioSource = gameObject.AddComponent<AudioSource>();
+            }
+
+            // Configure for UI click sound (2D)
+            audioSource.playOnAwake = false;
+            audioSource.spatialBlend = 0f; // 0 = 2D, 1 = 3D
+        }
     }
 
     void Start()
@@ -68,6 +86,15 @@ public class Attack : MonoBehaviour
     public void OnClick()
     {
         if (CurentEnemyHealth <= 0) return;
+
+        // Play a random click sound from clickSounds[]
+        if (audioSource != null && clickSounds != null && clickSounds.Length > 0)
+        {
+            int idx = UnityEngine.Random.Range(0, clickSounds.Length);
+            AudioClip clip = clickSounds[idx];
+            if (clip != null)
+                audioSource.PlayOneShot(clip);
+        }
 
         CurentEnemyHealth -= currentDamage;
         UpdateHealthText();
@@ -148,7 +175,7 @@ public class Attack : MonoBehaviour
         Enemy.SetActive(true);
         Chest.SetActive(false);
 
-        MaxEnemyHealth = Mathf.RoundToInt(MaxEnemyHealth * 1.2f);
+        MaxEnemyHealth = Mathf.RoundToInt(MaxEnemyHealth * 1.1f);
         CurentEnemyHealth = MaxEnemyHealth;
 
         UpdateHealthText();
