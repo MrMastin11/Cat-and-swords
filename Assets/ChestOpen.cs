@@ -28,10 +28,20 @@ public class ChestOpen : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip clickSound;
 
+    public SwordManager swordmanager;
+
     private bool opened = false;
 
     private List<string> swordPool = new List<string>();
     private System.Random rng = new System.Random();
+    private int currentTier = 1;
+
+    private int copper = 1;
+    private int iron = 0;
+    private int gold = 0;
+    private int diamond = 0;
+    private int obsidian = 0;
+
 
     void Start()
     {
@@ -58,8 +68,23 @@ public class ChestOpen : MonoBehaviour
         GameObject drop = Instantiate(dropPrefab, spawnPoint.position, Quaternion.identity, Chest.transform.parent);
         DropItem dropItem = drop.GetComponent<DropItem>();
         dropItem.SetSwordData(name, sprite);
-        yield return StartCoroutine(DropMotion(drop.transform));
 
+        switch (name)
+        {
+            case "Copper Sword":
+                if (currentTier < 2) currentTier = 2; RefillSwordPool();
+                break;
+            case "Iron Sword":
+                if (currentTier < 3) currentTier = 3; RefillSwordPool();
+                break;
+            case "Gold Sword":
+                if (currentTier < 4) currentTier = 4; RefillSwordPool();
+                break;
+            case "Diamond Sword":
+                if (currentTier < 5) currentTier = 5; RefillSwordPool();
+                break;
+        }
+        yield return StartCoroutine(DropMotion(drop.transform));
     }
 
     public void CloseChest()
@@ -79,11 +104,11 @@ public class ChestOpen : MonoBehaviour
 
         switch (name)
         {
-            case "Copper Sword": return (name, cuperSprite);
-            case "Iron Sword": return (name, ironSprite);
-            case "Gold Sword": return (name, goldSprite);
-            case "Diamond Sword": return (name, diamondSprite);
-            case "Obsidian Sword": return (name, obsidianSprite);
+            case "Copper Sword": copper++; return (name, cuperSprite);
+            case "Iron Sword": iron++; return (name, ironSprite);
+            case "Gold Sword": gold++; return (name, goldSprite);
+            case "Diamond Sword": diamond++; return (name, diamondSprite);
+            case "Obsidian Sword": obsidian++; return (name, obsidianSprite);
             default: return ("???", cuperSprite);
         }
     }
@@ -92,11 +117,11 @@ public class ChestOpen : MonoBehaviour
     {
         swordPool.Clear();
 
-        AddSwords("Copper Sword", 15);
-        AddSwords("Iron Sword", 12);
-        AddSwords("Gold Sword", 9);
-        AddSwords("Diamond Sword", 6);
-        AddSwords("Obsidian Sword", 3);
+        if (currentTier >= 1 && copper <15) AddSwords("Copper Sword", 5);
+        if (currentTier >= 2 && iron <15) AddSwords("Iron Sword", 4);
+        if (currentTier >= 3 && gold <15) AddSwords("Gold Sword", 3);
+        if (currentTier >= 4 && diamond <15) AddSwords("Diamond Sword", 2);
+        if (currentTier >= 5 && obsidian <15) AddSwords("Obsidian Sword", 1);
 
         for (int i = swordPool.Count - 1; i > 0; i--)
         {
