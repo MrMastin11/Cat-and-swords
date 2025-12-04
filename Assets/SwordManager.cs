@@ -41,7 +41,7 @@ public class SwordManager : MonoBehaviour
     {
         foreach (var sword in swords)
         {
-            bool isCopper = sword.name == "Copper Sword";
+            bool isCopper = sword.name == "Wooden Sword";
             SetVisible(sword, isCopper);
 
             if (isCopper)

@@ -10,6 +10,7 @@ public class Attack : MonoBehaviour
     public Graphic targetToFlash;
     public Slider EnemyHealthBar;
     public TextMeshProUGUI EnemyHealthText;
+    public TextMeshProUGUI MultiplierText;
     public GameObject Enemy;
     public GameObject Chest;
     public ChestOpen chestopen;
@@ -20,6 +21,7 @@ public class Attack : MonoBehaviour
     public Vector3 moveOffset = new Vector3(0, 20, 0);
     public int MaxEnemyHealth = 10;
     public int CurentEnemyHealth = 10;
+    public int DamageMultiplier = 1;
 
     [HideInInspector]
     public int currentDamage = 1;
@@ -29,7 +31,7 @@ public class Attack : MonoBehaviour
 
     [Header("Audio")]
     public AudioSource audioSource;
-    public AudioClip[] clickSounds; // now supports multiple sounds
+    public AudioClip[] clickSounds; 
 
     private Coroutine flashRoutine;
     private Coroutine flashColorRoutine;
@@ -42,7 +44,7 @@ public class Attack : MonoBehaviour
     {
         rt = img.rectTransform;
 
-        // Ensure an AudioSource exists so clicks can play a sound.
+        
         if (audioSource == null)
         {
             audioSource = GetComponent<AudioSource>();
@@ -51,9 +53,9 @@ public class Attack : MonoBehaviour
                 audioSource = gameObject.AddComponent<AudioSource>();
             }
 
-            // Configure for UI click sound (2D)
+          
             audioSource.playOnAwake = false;
-            audioSource.spatialBlend = 0f; // 0 = 2D, 1 = 3D
+            audioSource.spatialBlend = 0f; 
         }
     }
 
@@ -81,13 +83,16 @@ public class Attack : MonoBehaviour
             Enemy.SetActive(false);
             Chest.SetActive(true);
         }
+        if (DamageMultiplier > 1)
+        {
+            MultiplierText.text = $" Damage x{DamageMultiplier}";
+        }
     }
 
     public void OnClick()
     {
         if (CurentEnemyHealth <= 0) return;
 
-        // Play a random click sound from clickSounds[]
         if (audioSource != null && clickSounds != null && clickSounds.Length > 0)
         {
             int idx = UnityEngine.Random.Range(0, clickSounds.Length);
@@ -96,7 +101,7 @@ public class Attack : MonoBehaviour
                 audioSource.PlayOneShot(clip);
         }
 
-        CurentEnemyHealth -= currentDamage;
+        CurentEnemyHealth -= currentDamage * DamageMultiplier;
         UpdateHealthText();
         ResetVisuals();
 
