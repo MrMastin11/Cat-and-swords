@@ -34,8 +34,13 @@ public class ChestOpen : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip clickSound;
 
+    [Header("Scripts")]
     public SwordManager swordmanager;
     public Attack attack;
+    
+    public GameObject canvas;
+    public GameObject background;
+    public TextMeshProUGUI EndText;
 
     private bool opened = false;
 
@@ -59,6 +64,8 @@ public class ChestOpen : MonoBehaviour
     {
         Chest.sprite = chestSprites[0];
         textMeshProUGUI.text = "Click to unlock!";
+        background.SetActive(true);
+        EndText.text = "";
         RefillSwordPool();
     }
 
@@ -132,16 +139,16 @@ public class ChestOpen : MonoBehaviour
 
         switch (name)
         {
-            case "Wooden Sword": wooden++; if (wooden == 10) attack.DamageMultiplier++; return (name, woodenSprite);
-            case "Stone Sword": stone++; if (stone == 10) attack.DamageMultiplier++; return (name, stoneSprite);
-            case "Copper Sword": copper++; if (copper == 10) attack.DamageMultiplier++; return (name, copperSprite);
-            case "Iron Sword": iron++; if (iron == 10) attack.DamageMultiplier++; return (name, ironSprite);
-            case "Silver Sword": silver++; if (silver == 10) attack.DamageMultiplier++; return (name, silverSprite);
-            case "Gold Sword": gold++; if (gold == 10) attack.DamageMultiplier++; return (name, goldSprite);
-            case "Diamond Sword": diamond++; if (diamond == 10) attack.DamageMultiplier++; return (name, diamondSprite);
-            case "Obsidian Sword": obsidian++; if (obsidian == 10) attack.DamageMultiplier++; return (name, obsidianSprite);
-            case "Uranium Sword": uranium++; if (uranium == 10) attack.DamageMultiplier++; return (name, uraniumSprite);
-            case "Dark Sword": dark++; if (dark == 10) attack.DamageMultiplier++; return (name, darkSprite);
+            case "Wooden Sword": wooden++; if (wooden == 5) attack.DamageMultiplier++; return (name, woodenSprite);
+            case "Stone Sword": stone++; if (stone == 5) attack.DamageMultiplier++; return (name, stoneSprite);
+            case "Copper Sword": copper++; if (copper == 5) attack.DamageMultiplier++; return (name, copperSprite);
+            case "Iron Sword": iron++; if (iron == 5) attack.DamageMultiplier++; return (name, ironSprite);
+            case "Silver Sword": silver++; if (silver == 5) attack.DamageMultiplier++; return (name, silverSprite);
+            case "Gold Sword": gold++; if (gold == 5) attack.DamageMultiplier++; return (name, goldSprite);
+            case "Diamond Sword": diamond++; if (diamond == 5) attack.DamageMultiplier++; return (name, diamondSprite);
+            case "Obsidian Sword": obsidian++; if (obsidian == 5) attack.DamageMultiplier++; return (name, obsidianSprite);
+            case "Uranium Sword": uranium++; if (uranium == 5) attack.DamageMultiplier++; return (name, uraniumSprite);
+            case "Dark Sword": dark++; if (dark == 5) attack.DamageMultiplier++; return (name, darkSprite);
             default: return ("???", copperSprite);
         }
     }
@@ -149,24 +156,25 @@ public class ChestOpen : MonoBehaviour
     void RefillSwordPool()
     {
         swordPool.Clear();
-        if (currentTier >= 1 && wooden <10) AddSwords("Wooden Sword", 10);
-        if (currentTier >= 2 && stone <10) AddSwords("Stone Sword", 9);
-        if (currentTier >= 3 && copper <10) AddSwords("Copper Sword", 8);
-        if (currentTier >= 4 && iron <10) AddSwords("Iron Sword", 7);
-        if (currentTier >= 5 && silver <10) AddSwords("Silver Sword", 6);
-        if (currentTier >= 6 && gold <10) AddSwords("Gold Sword", 5);
-        if (currentTier >= 7 && diamond <10) AddSwords("Diamond Sword", 4);
-        if (currentTier >= 8 && obsidian <10) AddSwords("Obsidian Sword", 3);
-        if (currentTier >= 9 && uranium <10) AddSwords("Uranium Sword", 2);
-        if (currentTier >= 10 && dark <10) AddSwords("Dark Sword", 1);
+        if (currentTier >= 1 && wooden <5) AddSwords("Wooden Sword", 10);
+        if (currentTier >= 2 && stone <5) AddSwords("Stone Sword", 9);
+        if (currentTier >= 3 && copper <5) AddSwords("Copper Sword", 8);
+        if (currentTier >= 4 && iron <5) AddSwords("Iron Sword", 7);
+        if (currentTier >= 5 && silver <5) AddSwords("Silver Sword", 6);
+        if (currentTier >= 6 && gold <5) AddSwords("Gold Sword", 5);
+        if (currentTier >= 7 && diamond <5) AddSwords("Diamond Sword", 4);
+        if (currentTier >= 8 && obsidian <5) AddSwords("Obsidian Sword", 3);
+        if (currentTier >= 9 && uranium <5) AddSwords("Uranium Sword", 2);
+        if (currentTier >= 10 && dark < 5) AddSwords("Dark Sword", 1);
+        if (swordPool.Count == 0) { canvas.SetActive(false); background.SetActive(false); EndText.text = "Thanks for playing!"; }
 
 
 
         for (int i = swordPool.Count - 1; i > 0; i--)
-        {
-            int j = rng.Next(i + 1);
-            (swordPool[i], swordPool[j]) = (swordPool[j], swordPool[i]);
-        }
+            {
+                int j = rng.Next(i + 1);
+                (swordPool[i], swordPool[j]) = (swordPool[j], swordPool[i]);
+            }
     }
 
     void AddSwords(string name, int count)

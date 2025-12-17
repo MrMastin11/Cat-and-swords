@@ -39,6 +39,7 @@ public class Attack : MonoBehaviour
     private Vector2 originalAnchoredPos;
     private Sprite originalSprite;
     private Color originalTargetColor;
+    //private float EnemyNumber = 0;
 
     void Awake()
     {
@@ -53,7 +54,6 @@ public class Attack : MonoBehaviour
                 audioSource = gameObject.AddComponent<AudioSource>();
             }
 
-          
             audioSource.playOnAwake = false;
             audioSource.spatialBlend = 0f; 
         }
@@ -172,18 +172,21 @@ public class Attack : MonoBehaviour
 
     void UpdateHealthText()
     {
-        EnemyHealthText.text = $"{CurentEnemyHealth} / {MaxEnemyHealth}";
+        EnemyHealthText.text = $"{CurentEnemyHealth}";
     }
 
     public void NextEnemy()
     {
+        //EnemyNumber++;
         Enemy.SetActive(true);
         Chest.SetActive(false);
 
-        MaxEnemyHealth = Mathf.RoundToInt(MaxEnemyHealth * 1.1f);
+        MaxEnemyHealth = Mathf.RoundToInt(MaxEnemyHealth * (1.3f - 0));
         CurentEnemyHealth = MaxEnemyHealth;
 
         UpdateHealthText();
         chestopen.CloseChest();
     }
 }
+//(EnemyNumber / 1000)
+// { MaxEnemyHealth}

@@ -108,7 +108,7 @@ public class EnemyChangerUI : MonoBehaviour
     void UpdateHPUI()
     {
         playerHealthBar.value = (float)playerHP / playerMaxHP;
-        playerHPText.text = $"{playerHP} / 100";
+        playerHPText.text = $"{playerHP}";
     }
 
     void PlayerDeath()
