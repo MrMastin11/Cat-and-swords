@@ -39,7 +39,7 @@ public class Attack : MonoBehaviour
     private Vector2 originalAnchoredPos;
     private Sprite originalSprite;
     private Color originalTargetColor;
-    //private float EnemyNumber = 0;
+    private float EnemyNumber = 0;
 
     void Awake()
     {
@@ -177,11 +177,11 @@ public class Attack : MonoBehaviour
 
     public void NextEnemy()
     {
-        //EnemyNumber++;
+        EnemyNumber++;
         Enemy.SetActive(true);
         Chest.SetActive(false);
 
-        MaxEnemyHealth = Mathf.RoundToInt(MaxEnemyHealth * (1.3f - 0));
+        MaxEnemyHealth = Mathf.RoundToInt(MaxEnemyHealth * (1.3f - (EnemyNumber / 1000)));
         CurentEnemyHealth = MaxEnemyHealth;
 
         UpdateHealthText();
